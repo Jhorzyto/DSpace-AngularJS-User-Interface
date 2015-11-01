@@ -1,0 +1,28 @@
+<div>
+    <ol class="breadcrumb">
+        <li>
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+            <a href="#/communities" class="active">DSpace Home</a></li>
+    </ol>
+
+    <h2>DSpace Demo</h2>
+    <blockquote>
+        <p>A user interface for DSpace implemented with the help of AngularJS and the 
+            DSpace REST API. I decided to implement the project after seeing a discussion in the dspace-tech 
+            mailing list about the DSpace UI Prototype Challenge. While I have no plans to enter, 
+            I just used it as an excuse to mess around
+            with the DSpace REST API and angularJS.</p>
+        <p><a class="btn btn-primary btn-lg" href="https://wiki.duraspace.org/display/DSPACE/DSpace+UI+Prototype+Challenge" role="button">Learn more</a></p>
+        <footer>Jonathan Blood</footer>
+    </blockquote>
+
+    <h2>Communities</h2>
+    <ul class="list-group">
+        <li class="list-group-item"  ng-repeat="community in communities">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="badge">{{community.countItems}}</span>
+            <a href="#/community/{{community.id}}"> {{community.name}}</a>
+        </li>
+    </ul>
+
+</div>

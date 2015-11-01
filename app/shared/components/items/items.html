@@ -1,0 +1,9 @@
+<div class="items-list" ng-controller="itemsController">
+    <h3>Items within this collection</h3>
+    <ul class="list-group">
+        <li class="list-group-item"  ng-repeat="item in items">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <a href="#/item/{{item.id}}"> {{item.name}}</a>
+        </li>
+    </ul>
+</div>

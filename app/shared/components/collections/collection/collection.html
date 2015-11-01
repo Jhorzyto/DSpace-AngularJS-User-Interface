@@ -1,0 +1,38 @@
+<div>
+    <ol class="breadcrumb">
+        <li>
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+            <a href="#/communities">DSpace Home</a>
+        </li>
+        <li><a href="#/community/{{parentCommunityId}}">{{parentCommunityName}}</a></li>
+        <li class="active">{{name}}</li>
+    </ol>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="box">
+                <div class="box-icon">
+                    <span class="fa fa-4x fa-archive"></span>
+                </div>
+                <div class="info">
+                    <h4 class="text-center">{{name}}</h4>
+                    
+                    <div class="alert alert-success alert-dismissible" role="alert" ng-show="sidebarText">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div ng-bind-html="sidebarText"></div>
+                    </div>
+                    
+                    <p ng-bind-html="description"></p>
+                    
+                    <div class="well" ng-show="copyrightText">
+                        <p ng-bind-html="copyrightText"></p>
+                    </div>
+                    
+                    <div ng-include="'app/shared/components/items/items.html'"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

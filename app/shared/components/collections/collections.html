@@ -1,0 +1,10 @@
+<div class="collections-list" ng-controller="collectionsController">
+    <h3>Collections in this community</h3>
+    <ul class="list-group">
+        <li class="list-group-item"  ng-repeat="collection in collections">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="badge">{{collection.numberItems}}</span>
+            <a href="#/collection/{{collection.id}}">{{collection.name}}</a>
+        </li>
+    </ul>
+</div>

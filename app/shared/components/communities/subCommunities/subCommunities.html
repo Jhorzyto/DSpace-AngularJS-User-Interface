@@ -1,0 +1,10 @@
+<div class="subcommunities-list" ng-controller="subCommunitiesController">
+            <h3>Sub-communities within this community</h3>
+            <ul class="list-group">
+                <li class="list-group-item"  ng-repeat="community in subCommunities">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="badge">{{community.countItems}}</span>
+                    <a href="#/community/{{community.id}}"> {{community.name}}</a>
+                </li>
+            </ul>
+</div>
