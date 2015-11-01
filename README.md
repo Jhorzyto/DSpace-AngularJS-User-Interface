@@ -3,10 +3,10 @@ A user interface for DSpace implemented with the help of AngularJS and the DSpac
 
 ![Home](http://i.imgur.com/aiPfcw4.jpg)
 ---
-![Community](http://i.imgur.com/dCIL2HT)
+![Community](http://i.imgur.com/dCIL2HT.jpg)
 ---
-![Collection](http://i.imgur.com/G5P6e5H)
+![Collection](http://i.imgur.com/G5P6e5H.jpg)
 ---
-![Item](http://i.imgur.com/KdgTJfD)
+![Item](http://i.imgur.com/KdgTJfD.jpg)
 ---
 
